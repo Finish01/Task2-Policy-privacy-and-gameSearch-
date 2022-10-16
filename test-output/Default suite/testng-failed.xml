@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="privacy.demo.Demo">
+      <class name="com.steampowered.searchgame.testcases.GameSearch">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="verifyData"/>
           <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="verifyDetails"/>
         </methods>
-      </class> <!-- privacy.demo.Demo -->
+      </class> <!-- com.steampowered.searchgame.testcases.GameSearch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

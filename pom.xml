@@ -3,15 +3,24 @@
   <groupId>com.store.steampowered.1</groupId>
   <artifactId>SearchGame</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>SearchGame</name>
+	<properties>
+		<maven.compiler.source>19</maven.compiler.source>
+		<maven.compiler.target>19</maven.compiler.target>
+	</properties>
+	<name>SearchGame</name>
   
   <dependencies>
+	  <dependency>
+		  <groupId>org.apache.maven.plugins</groupId>
+		  <artifactId>maven-compiler-plugin</artifactId>
+		  <version>3.8.1</version>
+	  </dependency>
 	<dependency>
 	  <groupId>org.seleniumhq.selenium</groupId>
 	  <artifactId>selenium-java</artifactId>
 	  <version>4.4.0</version>
 	</dependency>
-	
+
 	
 	<dependency>
 	  <groupId>junit</groupId>

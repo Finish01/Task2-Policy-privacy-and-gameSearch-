@@ -3,13 +3,13 @@
     "",
     "\\src",
     "\\src\\main",
+    "\\src\\main\\java",
+    "\\src\\main\\java\\writingToJSON",
     "\\src\\test",
     "\\src\\test\\java",
-    "\\src\\test\\java\\privacy policy",
-    "\\src\\test\\java\\privacy policy\\demo",
     "\\src\\test\\java\\search",
     "\\src\\test\\java\\search\\demo"
   ],
-  "SelectedNode": "\\src\\test\\java\\privacy policy\\demo\\Demo.java",
+  "SelectedNode": "\\src\\main\\java\\writingToJSON\\WriteToJSON.java",
   "PreviewInSolutionExplorer": false
 }

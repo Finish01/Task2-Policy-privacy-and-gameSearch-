@@ -1,24 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-13T06:06:01 MSK" name="Default suite" finished-at="2022-10-13T06:06:07 MSK" duration-ms="6428">
+  <suite started-at="2022-10-17T00:43:19 MSK" name="Default suite" finished-at="2022-10-17T00:43:40 MSK" duration-ms="21119">
     <groups>
     </groups>
-    <test started-at="2022-10-13T06:06:01 MSK" name="Default test" finished-at="2022-10-13T06:06:07 MSK" duration-ms="6428">
-      <class name="privacy.demo.Demo">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:privacy.demo.Demo@306e95ec]" started-at="2022-10-13T06:06:01 MSK" name="launchBrowser" finished-at="2022-10-13T06:06:07 MSK" duration-ms="6246" status="PASS">
+    <test started-at="2022-10-17T00:43:19 MSK" name="Default test" finished-at="2022-10-17T00:43:40 MSK" duration-ms="21119">
+      <class name="com.steampowered.searchgame.testcases.GameSearch">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.steampowered.searchgame.testcases.GameSearch@659499f1]" started-at="2022-10-17T00:43:19 MSK" name="launchBrowser" finished-at="2022-10-17T00:43:36 MSK" duration-ms="17485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="verifyData()[pri:0, instance:privacy.demo.Demo@306e95ec]" started-at="2022-10-13T06:06:07 MSK" name="verifyData" finished-at="2022-10-13T06:06:07 MSK" duration-ms="10" status="FAIL">
-          <exception class="java.lang.ClassCastException">
+        <test-method signature="verifyAccessToSearchPage()[pri:1, instance:com.steampowered.searchgame.testcases.GameSearch@659499f1]" started-at="2022-10-17T00:43:36 MSK" name="verifyAccessToSearchPage" finished-at="2022-10-17T00:43:36 MSK" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccessToSearchPage -->
+        <test-method signature="verifySearchBox()[pri:2, instance:com.steampowered.searchgame.testcases.GameSearch@659499f1]" started-at="2022-10-17T00:43:36 MSK" name="verifySearchBox" finished-at="2022-10-17T00:43:36 MSK" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchBox -->
+        <test-method signature="verifyFirstResult()[pri:3, instance:com.steampowered.searchgame.testcases.GameSearch@659499f1]" started-at="2022-10-17T00:43:36 MSK" name="verifyFirstResult" finished-at="2022-10-17T00:43:36 MSK" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFirstResult -->
+        <test-method signature="saveInfoFirst()[pri:4, instance:com.steampowered.searchgame.testcases.GameSearch@659499f1]" started-at="2022-10-17T00:43:36 MSK" name="saveInfoFirst" finished-at="2022-10-17T00:43:36 MSK" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveInfoFirst -->
+        <test-method signature="saveInfoSecond()[pri:5, instance:com.steampowered.searchgame.testcases.GameSearch@659499f1]" started-at="2022-10-17T00:43:36 MSK" name="saveInfoSecond" finished-at="2022-10-17T00:43:37 MSK" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveInfoSecond -->
+        <test-method signature="verifySecondResult()[pri:6, instance:com.steampowered.searchgame.testcases.GameSearch@659499f1]" started-at="2022-10-17T00:43:37 MSK" name="verifySecondResult" finished-at="2022-10-17T00:43:40 MSK" duration-ms="3052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySecondResult -->
+        <test-method signature="verifyDetails()[pri:7, instance:com.steampowered.searchgame.testcases.GameSearch@659499f1]" started-at="2022-10-17T00:43:40 MSK" name="verifyDetails" finished-at="2022-10-17T00:43:40 MSK" duration-ms="15" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[class org.json.simple.JSONObject cannot be cast to class java.util.List (org.json.simple.JSONObject is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')]]>
+              <![CDATA[Cannot invoke "org.json.simple.JSONObject.get(Object)" because "com.steampowered.jsonreader.DataStore.jsonObject" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: class org.json.simple.JSONObject cannot be cast to class java.util.List (org.json.simple.JSONObject is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')
-at privacy.demo.Demo.verifyData(Demo.java:69)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.json.simple.JSONObject.get(Object)" because "com.steampowered.jsonreader.DataStore.jsonObject" is null
+at com.steampowered.jsonreader.DataStore.getJsonObject(DataStore.java:20)
+at com.steampowered.searchgame.testcases.GameSearch.verifyDetails(GameSearch.java:95)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -49,15 +74,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyData -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:privacy.demo.Demo@306e95ec]" started-at="2022-10-13T06:06:07 MSK" name="closeBrowser" finished-at="2022-10-13T06:06:07 MSK" duration-ms="139" status="PASS">
+        </test-method> <!-- verifyDetails -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.steampowered.searchgame.testcases.GameSearch@659499f1]" started-at="2022-10-17T00:43:40 MSK" name="closeBrowser" finished-at="2022-10-17T00:43:40 MSK" duration-ms="144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- privacy.demo.Demo -->
+      </class> <!-- com.steampowered.searchgame.testcases.GameSearch -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

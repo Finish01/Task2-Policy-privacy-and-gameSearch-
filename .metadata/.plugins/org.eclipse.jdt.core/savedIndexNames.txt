@@ -1,0 +1,9 @@
+INDEX VERSION 1.131+C:\Users\Finish\Tasks\SearchGame\.metadata\.plugins\org.eclipse.jdt.core
+493009222.index
+59610210.index
+1429706445.index
+1865797976.index
+2112151075.index
+3208472158.index
+3197449545.index
+1067094681.index
